@@ -1,0 +1,67 @@
+
+<html>
+<head>
+<title>form</title>
+<style type="text/css">
+	body{
+		background-image: url('a_1.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		margin:0;
+		height: 100%;
+		width: 100%;
+}
+input[type=text],input[type=password],input[type=email]{
+	border-radius: 10px;
+	height: 28px;
+}
+td{
+	text-transform: uppercase;
+	font-family: verdana;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+    <br>
+    
+    
+<center><b><h1 style="color: #000; font-family: verdana; font-weight: lighter;">BOOK EVENTS HERE</h1></b></center>
+<center>
+	<form method="Get" action="servlet" style="border: 3px solid #000; margin-top: 100px; width: 30%; background-color:transparent;">
+		<table border="0" cellspacing="10" cellpadding="5">
+                    <tr>
+				<td> First Name:</td><td><input type="text" name="fname" required onfocus="col(this)" onblur="decol(this)"></td>
+			</tr>
+                        <tr>
+                        <td>     Email:</td><td><input type="email" name="email" required onfocus="col(this)" onblur="decol(this)"></td>
+                        </tr>
+			<tr>
+				<td>Event Name:</td><td><input type="text" name="uname" required onfocus="col(this)" onblur="decol(this)"></td>
+			</tr>
+			<tr>
+				<td>Event Time:</td><td><input type="text" name="time" required onfocus="col(this)" onblur="decol(this)"></td>
+			</tr>
+                        <tr>
+				<td>Event Date:</td><td><input type="text" name="date" required onfocus="col(this)" onblur="decol(this)"></td>
+			</tr>
+			<tr>
+				<td>Mobile No.:</td><td><input type="text" name="mbn" required onfocus="col(this)" onblur="decol(this)"></td>
+			</tr>			
+		</table>
+		<input type="submit" name="signup" value="Register" style="font-size: 20px; background-color: transparent;text-transform: uppercase; padding: 10px; color: #179b77; font-family: verdana; margin-bottom: 20px;margin-top: 10px;cursor: pointer;" onclick="alert('Thanks For Registering')"> 
+	</form>
+</center>
+<center><a href="newwelcome.html"><button style="font-size: 20px; background-color: transparent;text-transform: uppercase; padding: 10px; color: #179b77; font-family: verdana; margin-bottom: 20px;margin-top: 10px;cursor: pointer;">Back To Home</button></a></center>
+<script type="text/javascript">
+	function col(x) {
+		x.style.background="lightgreen";
+	}
+	function decol(y) {
+		y.style.background="white";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SignUp Form</title>
+<style>
+body{
+background:#323232:
+}
+.wrap{
+width:350px;
+margin:auto;
+background:#00adee;
+margin-top:50px;
+padding:5px;
+}
+form
+{
+padding:10px;
+font-family:arial;
+border:1px dotted white;
+margin:10px;
+}
+h2{
+text-align:center;
+background:pink;
+color:white;
+padding:10px;
+border-radius:10px;
+
+}
+input{
+padding:10px;
+margin:5px;
+border-radius:5px;
+border:none;
+}
+input[type=text],input[type=email],input[type=number],input[type=password]
+{
+width:90%;
+}
+input[type=submit]{
+width:95%;
+background:orange;
+cursor:pointer;
+font-size:18px;
+font-weight:bold;
+color:white;
+}
+input[type=submit]:hover{
+background:green;
+}
+select{
+padding:10px;
+width:32%;
+border-radius:5px;
+
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+ <form action="reg-process.jsp" method="post">
+ <h2>SignUp Free</h2>
+ <input type="text" name ="name"placeholder="Your Name">
+ <input type="email" name ="email"placeholder="Your Email">
+ <input type="number" name ="number"placeholder="Mobile Number">
+ <input type="password" name ="password"placeholder="password">
+ <input type="password" name ="confirmpassword"placeholder="Confirm Password">
+ <br>
+ <br>
+ <span style="font-size:18px;">Date of Birth</span>
+<br>
+
+      <select name="DoBmonth">
+   
+   <option>Month</option>
+   <option value="january"> January</option>
+   <option value="febury"> febury</option>
+   <option value="jmarch"> march</option>
+   <option value="apral"> Apral</option>
+   <option value="maye"> Maye</option>
+   <option value="june"> June</option>
+   <option value="juley"> Juley</option>
+   <option value="augeste"> Augeste</option>
+   <option value="september"> September</option>
+   <option value="joctuber"> Octuber</option>
+   <option value="navember"> Navember</option>
+   <option value="december"> December</option>
+   
+   </select>
+
+   <select name="DoBday">
+   
+   <option>Day</option>
+   <option value="1"> 1</option>
+   <option value="2"> 2</option>
+   <option value="3"> 3</option>
+   <option value="4"> 4</option>
+   <option value="5"> 5</option>
+   <option value="6"> 6</option>
+   <option value="7"> 7</option>
+   <option value="8"> 8</option>
+   <option value="9"> 9</option>
+   <option value="10"> 10</option>
+   
+   </select>
+
+   <select name="DoByear">
+   
+   <option>Year</option>
+   <option value="2011"> 2011</option>
+   <option value="2012"> 2012</option>
+   <option value="2013"> 2013</option>
+   <option value="2014"> 2014</option>
+   <option value="2015"> 2015</option>
+  
+   </select>
+   <br>
+   <br>
+   <input type ="radio" name="male" value="male">Male
+   <input type ="radio" name="female" value="female">female
+   <br>
+   <input type="checkbox"> I Agree to The Terms And Condition
+   <br>
+   <a <input type="submit"  href="meralogin.html"> submit</a>
+
+</form>
+
+
+</div>
+
+
+
+</body>
+</html>﻿
